@@ -26,11 +26,14 @@
   "homepage": "https://github.com/vjuge/eth_deployer_sandbox#readme",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
     "@types/chai": "^4.3.4",
     "@types/mocha": "^10.0.1",
     "@types/node": "^18.16.0",
     "chai": "^4.3.7",
+    "ethers": "^5.7.2",
     "hardhat": "^2.14.0",
+    "hardhat-deploy": "^0.11.26",
     "hardhat-preprocessor": "^0.1.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"

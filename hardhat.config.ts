@@ -2,6 +2,9 @@ import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "hardhat-preprocessor";
 import fs from "fs";
+import 'hardhat-deploy';
+import "@nomiclabs/hardhat-ethers";
+
 
 const config: HardhatUserConfig = {
   solidity: "0.8.18",
@@ -23,6 +26,23 @@ const config: HardhatUserConfig = {
       },
     }),
   },
+  networks: {
+    hardhat: {
+      accounts: {
+        mnemonic: "test test test test test test test test test test test junk",
+        path: "m/44'/60'/0'/0",
+        initialIndex: 0,
+        count: 20,
+        passphrase: "",
+        accountsBalance: "1000000000000000000000000000",
+      },
+    }
+  },
+  namedAccounts: {
+    deployer: {
+      owner: 0,
+    }
+  }
 };
 
 export default config;
