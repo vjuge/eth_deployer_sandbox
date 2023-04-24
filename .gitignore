@@ -1,4 +1,6 @@
 .idea
+out/
+cache/
 
 eth_deployer_sandbox.iml
 
