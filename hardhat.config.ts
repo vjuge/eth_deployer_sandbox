@@ -7,7 +7,14 @@ import "@nomiclabs/hardhat-ethers";
 
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.18",
+  solidity: {
+    version: "0.8.18",
+    settings: {
+      optimizer: {
+        enabled: true,
+      }
+    }
+  },
   paths: {
     cache: "./cache_hardhat",
   },
@@ -34,8 +41,12 @@ const config: HardhatUserConfig = {
         initialIndex: 0,
         count: 20,
         passphrase: "",
-        accountsBalance: "1000000000000000000000000000",
+        accountsBalance: "1000000000000000000000000000", //1_000_000_000 Ether
       },
+      mining:{
+        auto: true,
+        interval: 500
+      }
     }
   },
   namedAccounts: {
