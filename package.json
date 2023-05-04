@@ -1,5 +1,5 @@
 {
-  "name": "eth_deployer_sandbox",
+  "name": "eth_anonymous_deployer_101",
   "version": "1.0.0",
   "scripts": {
     "fg-build": "forge build",
